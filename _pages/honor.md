@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /honor/
-title: honor
+title: Honor
 description:
 nav: true
 nav_order: 5
