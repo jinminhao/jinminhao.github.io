@@ -19,4 +19,4 @@ social: true  # includes social icons at the bottom of the page
 
 I am a ECE PhD student at Princeton University. I'm generally interested in the intersection of Computer Networks, Machine Learning, Security and Privacy.
 
-I obtained my MS degree at Carnegie Mellon University where I was advised by Prof. [Vyas Sekar](https://users.ece.cmu.edu/~vsekar/) and Prof. [Giulia Fanti](https://gfanti.github.io/website/) on privacy-preserving data sharing for networking traces. I got my BS degree at Shanghai Jiao Tong University.
+I obtained my MS degree at [Carnegie Mellon University](https://www.cmu.edu/) where I was advised by Prof. [Vyas Sekar](https://users.ece.cmu.edu/~vsekar/) and Prof. [Giulia Fanti](https://gfanti.github.io/website/) on privacy-preserving data sharing for networking traces. I got my BS degree at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/).
