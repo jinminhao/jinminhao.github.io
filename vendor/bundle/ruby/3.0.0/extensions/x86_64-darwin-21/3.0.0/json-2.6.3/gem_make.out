@@ -1,0 +1,16 @@
+current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/json-2.6.3/ext/json
+/usr/local/var/rbenv/versions/3.0.5/bin/ruby -I /usr/local/var/rbenv/versions/3.0.5/lib/ruby/site_ruby/3.0.0 extconf.rb
+creating Makefile
+
+current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/json-2.6.3/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20231206-48942-8bkzoh sitelibdir\=./.gem.20231206-48942-8bkzoh clean
+
+current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/json-2.6.3/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20231206-48942-8bkzoh sitelibdir\=./.gem.20231206-48942-8bkzoh
+make: Nothing to be done for `all'.
+
+current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/json-2.6.3/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20231206-48942-8bkzoh sitelibdir\=./.gem.20231206-48942-8bkzoh install
+
+current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/json-2.6.3/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20231206-48942-8bkzoh sitelibdir\=./.gem.20231206-48942-8bkzoh clean
