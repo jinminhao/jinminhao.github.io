@@ -1,0 +1,19 @@
+current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/usr/local/var/rbenv/versions/3.0.5/bin/ruby -I /usr/local/var/rbenv/versions/3.0.5/lib/ruby/site_ruby/3.0.0 extconf.rb
+creating Makefile
+
+current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20231206-55331-5arhq1 sitelibdir\=./.gem.20231206-55331-5arhq1 clean
+
+current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20231206-55331-5arhq1 sitelibdir\=./.gem.20231206-55331-5arhq1
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+
+current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20231206-55331-5arhq1 sitelibdir\=./.gem.20231206-55331-5arhq1 install
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20231206-55331-5arhq1
+
+current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20231206-55331-5arhq1 sitelibdir\=./.gem.20231206-55331-5arhq1 clean
