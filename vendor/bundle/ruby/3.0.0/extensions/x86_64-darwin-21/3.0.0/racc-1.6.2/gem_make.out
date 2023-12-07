@@ -5,16 +5,16 @@ checking for rb_ary_subseq()... yes
 creating Makefile
 
 current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/racc-1.6.2/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20231206-62488-dyukn sitelibdir\=./.gem.20231206-62488-dyukn clean
+make DESTDIR\= sitearchdir\=./.gem.20231206-68421-odsgdi sitelibdir\=./.gem.20231206-68421-odsgdi clean
 
 current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/racc-1.6.2/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20231206-62488-dyukn sitelibdir\=./.gem.20231206-62488-dyukn
+make DESTDIR\= sitearchdir\=./.gem.20231206-68421-odsgdi sitelibdir\=./.gem.20231206-68421-odsgdi
 compiling cparse.c
 linking shared-object racc/cparse.bundle
 
 current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/racc-1.6.2/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20231206-62488-dyukn sitelibdir\=./.gem.20231206-62488-dyukn install
-/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20231206-62488-dyukn/racc
+make DESTDIR\= sitearchdir\=./.gem.20231206-68421-odsgdi sitelibdir\=./.gem.20231206-68421-odsgdi install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20231206-68421-odsgdi/racc
 
 current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/racc-1.6.2/ext/racc/cparse
-make DESTDIR\= sitearchdir\=./.gem.20231206-62488-dyukn sitelibdir\=./.gem.20231206-62488-dyukn clean
+make DESTDIR\= sitearchdir\=./.gem.20231206-68421-odsgdi sitelibdir\=./.gem.20231206-68421-odsgdi clean

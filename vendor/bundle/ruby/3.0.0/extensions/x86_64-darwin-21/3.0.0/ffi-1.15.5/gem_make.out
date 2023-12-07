@@ -9,10 +9,10 @@ creating extconf.h
 creating Makefile
 
 current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/ffi-1.15.5/ext/ffi_c
-make DESTDIR\= sitearchdir\=./.gem.20231206-62488-1xo4e1 sitelibdir\=./.gem.20231206-62488-1xo4e1 clean
+make DESTDIR\= sitearchdir\=./.gem.20231206-68421-oaidxs sitelibdir\=./.gem.20231206-68421-oaidxs clean
 
 current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/ffi-1.15.5/ext/ffi_c
-make DESTDIR\= sitearchdir\=./.gem.20231206-62488-1xo4e1 sitelibdir\=./.gem.20231206-62488-1xo4e1
+make DESTDIR\= sitearchdir\=./.gem.20231206-68421-oaidxs sitelibdir\=./.gem.20231206-68421-oaidxs
 Configuring libffi
 /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/ffi-1.15.5/ext/ffi_c/libffi/configure: line 18692: readelf: command not found
 clang: error: unsupported option '-print-multi-os-directory'
@@ -90,7 +90,7 @@ compiling ffi.c
 linking shared-object ffi_c.bundle
 
 current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/ffi-1.15.5/ext/ffi_c
-make DESTDIR\= sitearchdir\=./.gem.20231206-62488-1xo4e1 sitelibdir\=./.gem.20231206-62488-1xo4e1 install
+make DESTDIR\= sitearchdir\=./.gem.20231206-68421-oaidxs sitelibdir\=./.gem.20231206-68421-oaidxs install
 cd "/Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/ffi-1.15.5/ext/ffi_c/libffi-x86_64-darwin21" && /Library/Developer/CommandLineTools/usr/bin/make
 /Library/Developer/CommandLineTools/usr/bin/make  all-recursive
 Making all in include
@@ -124,7 +124,7 @@ compiling Types.c
 compiling Variadic.c
 compiling ffi.c
 linking shared-object ffi_c.bundle
-/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20231206-62488-1xo4e1
+/usr/bin/install -c -m 0755 ffi_c.bundle ./.gem.20231206-68421-oaidxs
 
 current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/ffi-1.15.5/ext/ffi_c
-make DESTDIR\= sitearchdir\=./.gem.20231206-62488-1xo4e1 sitelibdir\=./.gem.20231206-62488-1xo4e1 clean
+make DESTDIR\= sitearchdir\=./.gem.20231206-68421-oaidxs sitelibdir\=./.gem.20231206-68421-oaidxs clean

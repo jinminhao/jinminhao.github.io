@@ -6,17 +6,17 @@ checking for whether -Wl,--exclude-libs=ALL  is accepted as LDFLAGS... no
 creating Makefile
 
 current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/mini_racer-0.6.3/ext/mini_racer_extension
-make DESTDIR\= sitearchdir\=./.gem.20231206-62488-gnonf6 sitelibdir\=./.gem.20231206-62488-gnonf6 clean
+make DESTDIR\= sitearchdir\=./.gem.20231206-68421-ryg4fz sitelibdir\=./.gem.20231206-68421-ryg4fz clean
 
 current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/mini_racer-0.6.3/ext/mini_racer_extension
-make DESTDIR\= sitearchdir\=./.gem.20231206-62488-gnonf6 sitelibdir\=./.gem.20231206-62488-gnonf6
+make DESTDIR\= sitearchdir\=./.gem.20231206-68421-ryg4fz sitelibdir\=./.gem.20231206-68421-ryg4fz
 compiling mini_racer_extension.cc
 clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
 linking shared-object mini_racer_extension.bundle
 
 current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/mini_racer-0.6.3/ext/mini_racer_extension
-make DESTDIR\= sitearchdir\=./.gem.20231206-62488-gnonf6 sitelibdir\=./.gem.20231206-62488-gnonf6 install
-/usr/bin/install -c -m 0755 mini_racer_extension.bundle ./.gem.20231206-62488-gnonf6
+make DESTDIR\= sitearchdir\=./.gem.20231206-68421-ryg4fz sitelibdir\=./.gem.20231206-68421-ryg4fz install
+/usr/bin/install -c -m 0755 mini_racer_extension.bundle ./.gem.20231206-68421-ryg4fz
 
 current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/mini_racer-0.6.3/ext/mini_racer_extension
-make DESTDIR\= sitearchdir\=./.gem.20231206-62488-gnonf6 sitelibdir\=./.gem.20231206-62488-gnonf6 clean
+make DESTDIR\= sitearchdir\=./.gem.20231206-68421-ryg4fz sitelibdir\=./.gem.20231206-68421-ryg4fz clean

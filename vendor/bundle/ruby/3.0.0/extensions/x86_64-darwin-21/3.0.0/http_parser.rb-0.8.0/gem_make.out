@@ -3,10 +3,10 @@ current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/
 creating Makefile
 
 current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20231206-62488-oqld7d sitelibdir\=./.gem.20231206-62488-oqld7d clean
+make DESTDIR\= sitearchdir\=./.gem.20231206-68421-yy1h4p sitelibdir\=./.gem.20231206-68421-yy1h4p clean
 
 current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20231206-62488-oqld7d sitelibdir\=./.gem.20231206-62488-oqld7d
+make DESTDIR\= sitearchdir\=./.gem.20231206-68421-yy1h4p sitelibdir\=./.gem.20231206-68421-yy1h4p
 compiling ruby_http_parser.c
 ruby_http_parser.c:365:17: warning: comparison of integers of different signs: 'size_t' (aka 'unsigned long') and 'long' [-Wsign-compare]
     if (nparsed < len)
@@ -16,8 +16,8 @@ compiling ryah_http_parser.c
 linking shared-object ruby_http_parser.bundle
 
 current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20231206-62488-oqld7d sitelibdir\=./.gem.20231206-62488-oqld7d install
-/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20231206-62488-oqld7d
+make DESTDIR\= sitearchdir\=./.gem.20231206-68421-yy1h4p sitelibdir\=./.gem.20231206-68421-yy1h4p install
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20231206-68421-yy1h4p
 
 current directory: /Users/jinminhao/Documents/jinminhao.github.io/vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.8.0/ext/ruby_http_parser
-make DESTDIR\= sitearchdir\=./.gem.20231206-62488-oqld7d sitelibdir\=./.gem.20231206-62488-oqld7d clean
+make DESTDIR\= sitearchdir\=./.gem.20231206-68421-yy1h4p sitelibdir\=./.gem.20231206-68421-yy1h4p clean
