@@ -7,9 +7,13 @@ nav: true
 nav_order: 5
 ---
 
-Storage System 15746/18746 (TA@CMU) -- Fall 2022
+### Carnegie Mellon University
 
-Intro. to Operating System VE482 (TA@SJTU) -- Fall 2019
+- Storage System 15746/18746 -- Fall 2022
 
-Intro. to Circuits VE215 (TA@SJTU) -- Fall 2018
+### Shanghai Jiao Tong University
+
+- Intro. to Operating System VE482  -- Fall 2019
+
+- Intro. to Circuits VE215 -- Fall 2018
 
