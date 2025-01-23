@@ -8,6 +8,9 @@ nav_order: 5
 ---
 
 #### Princeton University
+- Information Security (ECE432/COS432) -- Spring 2025
+    - [Course Website](https://ece432-spring25.github.io/)
+
 - Principles of Computer System Design (COS316) -- Fall 2024 
     - [Course Website](https://www.cs.princeton.edu/courses/archive/fall24/cos316/index.html)
 
