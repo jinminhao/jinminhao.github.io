@@ -7,7 +7,8 @@ nav: true
 nav_order: 5
 ---
 
-- Outstanding Graduates, Shanghai Jiao Tong University -- 2019
+- Pramod Subramanian *17 Early Career Graduate Award,, Princeton University -- 2025
+- Outstanding Graduates, Shanghai Jiao Tong University -- 2020
 - Silver Award of Capstone, UM‑SJTU Joint Institute, Shanghai Jiao Tong University -- 2019
 - National Scholarship, Ministry of Education -- 2019
 - First Prize, VEX Robot Asian Open -- 2019

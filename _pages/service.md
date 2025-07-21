@@ -13,5 +13,6 @@ Software Engineer Intern at [PaddlePaddle](https://www.paddlepaddle.org.cn/en), 
 
 Software Engineer Intern at [PaddlePaddle](https://www.paddlepaddle.org.cn/en), Baidu -- Nov. 2020 ‑ Jan. 2021 -->
 
+- Artifact evaluation, NSDI -- 2026
 - Artifact evaluation, FAST -- 2025
 - Artifact evaluation, SIGCOMM -- 2024
