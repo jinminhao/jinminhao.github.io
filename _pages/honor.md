@@ -1,13 +1,20 @@
 ---
 layout: page
 permalink: /honor/
-title: Honor
+title: Service & Award
 description:
 nav: true
 nav_order: 5
 ---
 
-- Pramod Subramanian *17 Early Career Graduate Award,, Princeton University -- 2025
+## Service
+- Artifact evaluation, NSDI -- 2026
+- Artifact evaluation, FAST -- 2025
+- Artifact evaluation, SIGCOMM -- 2024
+
+
+## Award
+- Pramod Subramanian *17 Early Career Graduate Award, Princeton University -- 2025
 - Outstanding Graduates, Shanghai Jiao Tong University -- 2020
 - Silver Award of Capstone, UM‑SJTU Joint Institute, Shanghai Jiao Tong University -- 2019
 - National Scholarship, Ministry of Education -- 2019
