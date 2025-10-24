@@ -11,8 +11,8 @@
       preview={tracebleed.png},
 }
 
-@misc{hè2025learningconstraintsdirectlynetwork,
-      title={Learning Constraints Directly from Network Data}, 
+@misc{hè2025makinglogicfirstclasscitizen,
+      title={Making Logic a First-Class Citizen in Network Data Generation with ML}, 
       author={Hongyu Hè and Minhao Jin and Maria Apostolaki},
       year={2025},
       eprint={2506.23964},
@@ -32,34 +32,6 @@
     series={USENIX Security '25},
     abbr={USENIX Security},
     preview={pants.png},
-    abstract = {Multiple network management tasks, from resource
-allocation to intrusion detection, rely on some form of
-ML-based network traffic classification (MNC). Despite their
-potential, MNCs are vulnerable to adversarial inputs, which
-can lead to outages, poor decision-making, and security
-violations, among other issues.
-
-The goal of this paper is to help network operators assess
-and enhance the robustness of their MNC against adversarial
-inputs. The most critical step for this is generating inputs that
-can fool the MNC while being realizable under various threat
-models. Compared to other ML models, finding adversarial inputs against MNCs is more challenging due to the existence of
-non-differentiable components e.g., traffic engineering and the
-need to constrain inputs to preserve semantics and ensure reliability. These factors prevent the direct use of well-established
-gradient-based methods developed in adversarial ML (AML).
-
-To address these challenges, we introduce PANTS, a
-practical white-box framework that uniquely integrates
-AML techniques with Satisfiability Modulo Theories (SMT)
-solvers to generate adversarial inputs for MNCs. We also
-embed PANTS into an iterative adversarial training process
-that enhances the robustness of MNCs against adversarial
-inputs. PANTS is 70% and 2x more likely in median to
-find adversarial inputs against target MNCs compared to
-state-of-the-art baselines, namely Amoeba and BAP. PANTS
-improves the robustness of the target MNCs by 52.7%
-(even against attackers outside of what is considered during
-robustification) without sacrificing their accuracy.},
     pdf = {https://arxiv.org/abs/2409.04691},
     code = {https://github.com/jinminhao/PANTS},
     selected={true}
@@ -75,7 +47,6 @@ robustification) without sacrificing their accuracy.},
     doi = "10.1184/R1/22266367.v1",
     preview={colabgan.png},
     abbr={MS Thesis},
-    abstract = {https://www.proquest.com/docview/2759307887?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses},
     pdf = {https://www.proquest.com/docview/2759307887?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses},
 }
 
@@ -88,7 +59,6 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 url = {https://doi.org/10.1145/3544216.3544251},
 doi = {10.1145/3544216.3544251},
-abstract = {We explore the feasibility of using Generative Adversarial Networks (GANs) to automatically learn generative models to generate synthetic packet- and flow header traces for networking tasks (e.g., telemetry, anomaly detection, provisioning). We identify key fidelity, scalability, and privacy challenges and tradeoffs in existing GAN-based approaches. By synthesizing domain-specific insights with recent advances in machine learning and privacy, we identify design choices to tackle these challenges. Building on these insights, we develop an end-to-end framework, NetShare. We evaluate NetShare on six diverse packet header traces and find that: (1) across all distributional metrics and traces, it achieves 46\% more accuracy than baselines and (2) it meets users' requirements of downstream tasks in evaluating accuracy and rank ordering of candidate approaches.},
 booktitle = {Proceedings of the ACM SIGCOMM 2022 Conference},
 pages = {458-472},
 numpages = {15},
@@ -112,7 +82,6 @@ day = {01},
 volume = {16},
 number = {9},
 pages = {1595-1605},
-abstract = {Recently, automatic surgical skill assessment has received the attention given the increasingly important role of surgical training. The assessment usually involves skill score prediction and further feedback generation. Existing work on skill score prediction is limited with several challenges and deserves more promising outcomes. For the feedback, most work identifies the flaws on the granularity of video frames or clips. It thus remains to be explored how to identify poorly performed gestures (segments) and further how to provide good references for improvement.},
 issn = {1861-6429},
 doi = {10.1007/s11548-021-02448-4},
 url = {https://doi.org/10.1007/s11548-021-02448-4},
@@ -129,7 +98,6 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 url = {https://doi.org/10.1145/3341105.3374092},
 doi = {10.1145/3341105.3374092},
-abstract = {In recent years, the research community has begun to explore Video-Based Action Quality Assessment on Human Body (VB-AQA), while few work focuses on Video-Based Action Quality Assessment on Human Hand (VH-AQA) yet. The current work on VB-AQA fails to deal with the inconsistency between captured features and the reality due to the changing angles of the camera, leaving a huge gap between VB-AQA and VH-AQA, while the computational efficiency is another critical problem. In this paper, a novel data-driven method for real-time VH-AQA is proposed. Features are formulated as spatio-temporal hand poses in this method and extracted via four steps: hand segmentation, 2D hand pose estimation, 3D hand pose estimation and hand pose organization. Based on the extracted features an assessment model is applied to evaluate the performance of actions and indicate the most promising adjustment as the feedback. We demonstrate the evaluation accuracy and computational efficiency of our method using our own Origami Video Dataset. For the latter, two new metrics are designed. It turns out that our method provides opportunities for real-time digital reconstruction of physical world activities and timely assessment.},
 booktitle = {Proceedings of the 35th Annual ACM Symposium on Applied Computing},
 pages = {2117-2120},
 numpages = {4},

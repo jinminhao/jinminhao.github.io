@@ -8,6 +8,7 @@ nav_order: 5
 ---
 
 ## Service
+- Shadow PC, EuroSys -- 2026
 - Artifact evaluation, NSDI -- 2026
 - Artifact evaluation, FAST -- 2025
 - Artifact evaluation, SIGCOMM -- 2024
