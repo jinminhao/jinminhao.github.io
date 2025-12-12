@@ -697,6 +697,53 @@ footer.sticky-bottom {
 .publications {
   margin-top: 2rem;
 
+  
+
+  .preview {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+    transition: transform 0.2s ease;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  // .title {
+  //   font-size: 1.2rem;
+  //   font-weight: 600;
+  //   line-height: 1.4;
+  //   margin-bottom: 0.5rem;
+  //   color: var(--global-text-color);
+  // }
+  
+  .author {
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+    line-height: 1.5;
+  }
+  
+  .periodical {
+    font-size: 0.9rem;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.3rem;
+  }
+
+  // .row {
+  //   transition: background-color 0.2s ease;
+  //   padding: 1.5rem;
+  //   margin-left: -1.5rem;
+  //   margin-right: -1.5rem;
+  //   border-radius: 8px;
+    
+  //   &:hover {
+  //     background-color: rgba(0, 0, 0, 0.02);
+  //   }
+  // }
+
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;
