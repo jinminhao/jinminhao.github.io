@@ -1,14 +1,18 @@
 // Has to be in the head tag, otherwise a flicker effect will occur.
 
-let toggleTheme = (theme) => {
-  if (theme == "dark") {
-    setTheme("light");
-  } else {
-    setTheme("dark");
-  }
+let toggleTheme = () => {
+  // Read from DOM directly instead of localStorage to avoid sync issues
+  const currentTheme = document.documentElement.getAttribute("data-theme");
+  const newTheme = currentTheme === "dark" ? "light" : "dark";
+  setTheme(newTheme);
 };
 
 let setTheme = (theme) => {
+  // Ensure theme is valid
+  if (theme !== "dark" && theme !== "light") {
+    theme = "light";
+  }
+
   transTheme();
   setHighlight(theme);
   setGiscusTheme(theme);
@@ -33,52 +37,59 @@ let setTheme = (theme) => {
     setVegaLiteTheme(theme);
   }
 
-  if (theme) {
-    document.documentElement.setAttribute("data-theme", theme);
+  document.documentElement.setAttribute("data-theme", theme);
 
-    // Add class to tables.
-    let tables = document.getElementsByTagName("table");
-    for (let i = 0; i < tables.length; i++) {
-      if (theme == "dark") {
-        tables[i].classList.add("table-dark");
-      } else {
-        tables[i].classList.remove("table-dark");
-      }
+  // Add class to tables.
+  let tables = document.getElementsByTagName("table");
+  for (let i = 0; i < tables.length; i++) {
+    if (theme === "dark") {
+      tables[i].classList.add("table-dark");
+    } else {
+      tables[i].classList.remove("table-dark");
     }
-
-    // Set jupyter notebooks themes.
-    let jupyterNotebooks = document.getElementsByClassName("jupyter-notebook-iframe-container");
-    for (let i = 0; i < jupyterNotebooks.length; i++) {
-      let bodyElement = jupyterNotebooks[i].getElementsByTagName("iframe")[0].contentWindow.document.body;
-      if (theme == "dark") {
-        bodyElement.setAttribute("data-jp-theme-light", "false");
-        bodyElement.setAttribute("data-jp-theme-name", "JupyterLab Dark");
-      } else {
-        bodyElement.setAttribute("data-jp-theme-light", "true");
-        bodyElement.setAttribute("data-jp-theme-name", "JupyterLab Light");
-      }
-    }
-  } else {
-    document.documentElement.removeAttribute("data-theme");
   }
 
+  // Set jupyter notebooks themes.
+  let jupyterNotebooks = document.getElementsByClassName("jupyter-notebook-iframe-container");
+  for (let i = 0; i < jupyterNotebooks.length; i++) {
+    let iframe = jupyterNotebooks[i].getElementsByTagName("iframe")[0];
+    if (iframe && iframe.contentWindow && iframe.contentWindow.document) {
+      let bodyElement = iframe.contentWindow.document.body;
+      if (bodyElement) {
+        if (theme === "dark") {
+          bodyElement.setAttribute("data-jp-theme-light", "false");
+          bodyElement.setAttribute("data-jp-theme-name", "JupyterLab Dark");
+        } else {
+          bodyElement.setAttribute("data-jp-theme-light", "true");
+          bodyElement.setAttribute("data-jp-theme-name", "JupyterLab Light");
+        }
+      }
+    }
+  }
+
+  // Save to localStorage
   localStorage.setItem("theme", theme);
 
   // Updates the background of medium-zoom overlay.
   if (typeof medium_zoom !== "undefined") {
     medium_zoom.update({
-      background: getComputedStyle(document.documentElement).getPropertyValue("--global-bg-color") + "ee", // + 'ee' for trasparency.
+      background: getComputedStyle(document.documentElement).getPropertyValue("--global-bg-color") + "ee", // + 'ee' for transparency.
     });
   }
 };
 
 let setHighlight = (theme) => {
-  if (theme == "dark") {
-    document.getElementById("highlight_theme_light").media = "none";
-    document.getElementById("highlight_theme_dark").media = "";
-  } else {
-    document.getElementById("highlight_theme_dark").media = "none";
-    document.getElementById("highlight_theme_light").media = "";
+  const lightTheme = document.getElementById("highlight_theme_light");
+  const darkTheme = document.getElementById("highlight_theme_dark");
+  
+  if (lightTheme && darkTheme) {
+    if (theme === "dark") {
+      lightTheme.media = "none";
+      darkTheme.media = "";
+    } else {
+      darkTheme.media = "none";
+      lightTheme.media = "";
+    }
   }
 };
 
@@ -111,7 +122,7 @@ let addMermaidZoom = (records, observer) => {
 };
 
 let setMermaidTheme = (theme) => {
-  if (theme == "light") {
+  if (theme === "light") {
     // light theme name in mermaid is 'default'
     // https://mermaid.js.org/config/theming.html#available-themes
     theme = "default";
@@ -120,9 +131,11 @@ let setMermaidTheme = (theme) => {
   /* Re-render the SVG, based on https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/_includes/mermaid.html */
   document.querySelectorAll(".mermaid").forEach((elem) => {
     // Get the code block content from previous element, since it is the mermaid code itself as defined in Markdown, but it is hidden
-    let svgCode = elem.previousSibling.childNodes[0].innerHTML;
-    elem.removeAttribute("data-processed");
-    elem.innerHTML = svgCode;
+    if (elem.previousSibling && elem.previousSibling.childNodes[0]) {
+      let svgCode = elem.previousSibling.childNodes[0].innerHTML;
+      elem.removeAttribute("data-processed");
+      elem.innerHTML = svgCode;
+    }
   });
 
   mermaid.initialize({ theme: theme });
@@ -139,39 +152,45 @@ let setMermaidTheme = (theme) => {
 let setDiff2htmlTheme = (theme) => {
   document.querySelectorAll(".diff2html").forEach((elem) => {
     // Get the code block content from previous element, since it is the diff code itself as defined in Markdown, but it is hidden
-    let textData = elem.previousSibling.childNodes[0].innerHTML;
-    elem.innerHTML = "";
-    const configuration = { colorScheme: theme, drawFileList: true, highlight: true, matching: "lines" };
-    const diff2htmlUi = new Diff2HtmlUI(elem, textData, configuration);
-    diff2htmlUi.draw();
+    if (elem.previousSibling && elem.previousSibling.childNodes[0]) {
+      let textData = elem.previousSibling.childNodes[0].innerHTML;
+      elem.innerHTML = "";
+      const configuration = { colorScheme: theme, drawFileList: true, highlight: true, matching: "lines" };
+      const diff2htmlUi = new Diff2HtmlUI(elem, textData, configuration);
+      diff2htmlUi.draw();
+    }
   });
 };
 
 let setEchartsTheme = (theme) => {
   document.querySelectorAll(".echarts").forEach((elem) => {
     // Get the code block content from previous element, since it is the echarts code itself as defined in Markdown, but it is hidden
-    let jsonData = elem.previousSibling.childNodes[0].innerHTML;
-    echarts.dispose(elem);
+    if (elem.previousSibling && elem.previousSibling.childNodes[0]) {
+      let jsonData = elem.previousSibling.childNodes[0].innerHTML;
+      echarts.dispose(elem);
 
-    if (theme === "dark") {
-      var chart = echarts.init(elem, "dark-fresh-cut");
-    } else {
-      var chart = echarts.init(elem);
+      if (theme === "dark") {
+        var chart = echarts.init(elem, "dark-fresh-cut");
+      } else {
+        var chart = echarts.init(elem);
+      }
+
+      chart.setOption(JSON.parse(jsonData));
     }
-
-    chart.setOption(JSON.parse(jsonData));
   });
 };
 
 let setVegaLiteTheme = (theme) => {
   document.querySelectorAll(".vega-lite").forEach((elem) => {
     // Get the code block content from previous element, since it is the vega lite code itself as defined in Markdown, but it is hidden
-    let jsonData = elem.previousSibling.childNodes[0].innerHTML;
-    elem.innerHTML = "";
-    if (theme === "dark") {
-      vegaEmbed(elem, JSON.parse(jsonData), { theme: "dark" });
-    } else {
-      vegaEmbed(elem, JSON.parse(jsonData));
+    if (elem.previousSibling && elem.previousSibling.childNodes[0]) {
+      let jsonData = elem.previousSibling.childNodes[0].innerHTML;
+      elem.innerHTML = "";
+      if (theme === "dark") {
+        vegaEmbed(elem, JSON.parse(jsonData), { theme: "dark" });
+      } else {
+        vegaEmbed(elem, JSON.parse(jsonData));
+      }
     }
   });
 };
@@ -183,23 +202,33 @@ let transTheme = () => {
   }, 500);
 };
 
-let initTheme = (theme) => {
-  if (theme == null || theme == "null") {
+let initTheme = (storedTheme) => {
+  let theme = storedTheme;
+  
+  // If no stored theme or invalid, check system preference
+  if (!theme || theme === "null" || (theme !== "dark" && theme !== "light")) {
     const userPref = window.matchMedia;
     if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
       theme = "dark";
+    } else {
+      theme = "light";
     }
   }
 
   setTheme(theme);
 };
 
+// Initialize theme immediately
 initTheme(localStorage.getItem("theme"));
 
+// Set up toggle button after DOM is ready
 document.addEventListener("DOMContentLoaded", function () {
   const mode_toggle = document.getElementById("light-toggle");
 
-  mode_toggle.addEventListener("click", function () {
-    toggleTheme(localStorage.getItem("theme"));
-  });
+  if (mode_toggle) {
+    mode_toggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      toggleTheme();
+    });
+  }
 });

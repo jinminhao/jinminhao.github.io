@@ -1,0 +1,250 @@
+// _sass/_custom_publications.scss
+// Add this file to your _sass folder and import it in your main.scss
+// Or copy these styles directly into _sass/_base.scss
+
+// =============================================================================
+// PUBLICATIONS PAGE STYLING
+// =============================================================================
+
+.publications {
+  // Year headers
+  h2.bibliography {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--global-text-color-light);
+    text-align: right;
+    margin: 3rem 0 1.5rem 0;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    letter-spacing: -0.02em;
+    
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  // Publication list
+  ol.bibliography {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 1.5rem;
+      
+      .row {
+        display: flex;
+        gap: 1.25rem;
+        padding: 1.5rem;
+        background: var(--global-bg-color);
+        border-radius: 12px;
+        border: 1px solid var(--global-divider-color);
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+          border-color: var(--global-theme-color);
+        }
+      }
+    }
+  }
+
+  // Venue badge (NSDI, SIGCOMM, etc.)
+  .col.col-sm-2.abbr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: 120px;
+
+    abbr.badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      padding: 0.4rem 0.75rem;
+      border-radius: 6px;
+      background: linear-gradient(135deg, var(--global-theme-color) 0%, #8b5cf6 100%);
+      color: white;
+      text-decoration: none;
+      border: none;
+      box-shadow: 0 2px 6px rgba(99, 102, 241, 0.3);
+    }
+  }
+
+  // Preview image
+  .preview {
+    border-radius: 8px !important;
+    border: 1px solid var(--global-divider-color) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    }
+  }
+
+  // Content column
+  .col-sm-8 {
+    flex: 1;
+    min-width: 0;
+
+    // Title
+    .title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--global-text-color);
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    // Authors
+    .author {
+      font-size: 0.9rem;
+      color: var(--global-text-color-light);
+      margin-bottom: 0.4rem;
+      line-height: 1.5;
+
+      .more-authors {
+        color: var(--global-theme-color);
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-underline-offset: 2px;
+        
+        &:hover {
+          text-decoration-style: solid;
+        }
+      }
+    }
+
+    // Venue/Journal
+    .periodical {
+      font-size: 0.85rem;
+      color: var(--global-text-color-light);
+      margin-bottom: 0.25rem;
+
+      em {
+        font-style: italic;
+        color: var(--global-text-color);
+      }
+    }
+
+    // Links (PDF, Code, etc.)
+    .links {
+      margin-top: 0.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+
+      a.btn {
+        font-size: 0.75rem;
+        font-weight: 500;
+        padding: 0.35rem 0.75rem;
+        border-radius: 6px;
+        background: var(--global-code-bg-color);
+        color: var(--global-text-color);
+        border: 1px solid var(--global-divider-color);
+        transition: all 0.2s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+
+        &:hover {
+          background: var(--global-theme-color);
+          color: white;
+          border-color: var(--global-theme-color);
+          transform: translateY(-1px);
+        }
+      }
+    }
+  }
+}
+
+// =============================================================================
+// DARK MODE ADJUSTMENTS
+// =============================================================================
+
+html[data-theme="dark"] {
+  .publications {
+    h2.bibliography {
+      color: rgba(255, 255, 255, 0.5);
+      border-bottom-color: rgba(255, 255, 255, 0.1);
+    }
+
+    ol.bibliography li .row {
+      background: rgba(30, 30, 46, 0.6);
+      border-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        border-color: var(--global-theme-color);
+      }
+    }
+
+    .col-sm-8 {
+      .title {
+        color: rgba(255, 255, 255, 0.95);
+      }
+
+      .author {
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .periodical {
+        color: rgba(255, 255, 255, 0.6);
+
+        em {
+          color: rgba(255, 255, 255, 0.8);
+        }
+      }
+
+      .links a.btn {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.15);
+        color: rgba(255, 255, 255, 0.9);
+
+        &:hover {
+          background: var(--global-theme-color);
+          color: white;
+        }
+      }
+    }
+
+    .preview {
+      border-color: rgba(255, 255, 255, 0.1) !important;
+    }
+  }
+}
+
+// =============================================================================
+// RESPONSIVE ADJUSTMENTS
+// =============================================================================
+
+@media (max-width: 768px) {
+  .publications {
+    h2.bibliography {
+      font-size: 2rem;
+      text-align: left;
+    }
+
+    ol.bibliography li .row {
+      flex-direction: column;
+      padding: 1.25rem;
+    }
+
+    .col.col-sm-2.abbr {
+      flex-direction: row;
+      justify-content: flex-start;
+      min-width: auto;
+      margin-bottom: 0.5rem;
+    }
+
+    .preview {
+      max-width: 150px;
+    }
+  }
+}

@@ -1,0 +1,486 @@
+// =============================================================================
+// _sass/_custom.scss
+// Custom styling for Publications, Experience, and Service & Award pages
+// Add this file to your _sass folder and import in _sass/_base.scss:
+//   @import "custom";
+// =============================================================================
+
+
+
+// =============================================================================
+// SHARED CARD STYLES
+// =============================================================================
+
+.custom-card {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+  border-radius: 12px;
+  border: 1px solid var(--global-divider-color);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-color: var(--global-theme-color);
+  }
+}
+
+.custom-section {
+  margin-bottom: 3.5rem;
+}
+
+.custom-section-title {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--global-text-color);
+  margin-bottom: 1.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--global-divider-color);
+  letter-spacing: -0.02em;
+}
+
+// =============================================================================
+// EXPERIENCE PAGE STYLES
+// =============================================================================
+
+.experience-card {
+  @extend .custom-card;
+}
+
+.company-logo {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  border-radius: 12px;
+  object-fit: contain;
+  padding: 8px;
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.experience-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.company-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--global-text-color);
+  margin: 0 0 0.6rem 0;
+  letter-spacing: -0.01em;
+}
+
+.experience-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    color: var(--global-text-color-light);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    padding: 0.2rem 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    &::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: var(--global-theme-color);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.role-title {
+  font-weight: 500;
+  color: var(--global-text-color);
+}
+
+.time-period {
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+}
+
+.course-link {
+  color: var(--global-theme-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: var(--global-theme-color);
+    text-decoration: underline;
+  }
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background: var(--global-code-bg-color);
+  color: var(--global-text-color-light);
+  font-size: 0.8rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.group-tag {
+  color: var(--global-text-color-light);
+}
+
+// =============================================================================
+// SERVICE & AWARD PAGE STYLES
+// =============================================================================
+
+.honor-section {
+  @extend .custom-section;
+}
+
+.honor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.honor-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+  border-radius: 10px;
+  border: 1px solid var(--global-divider-color);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+
+  &:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    border-color: var(--global-theme-color);
+  }
+}
+
+.honor-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.honor-icon {
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+  border-radius: 50%;
+  
+  &.service {
+    background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+  }
+  
+  &.award {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  }
+}
+
+.honor-text {
+  font-size: 0.95rem;
+  color: var(--global-text-color);
+  font-weight: 450;
+  line-height: 1.5;
+}
+
+.honor-venue {
+  color: var(--global-text-color-light);
+  font-weight: 400;
+}
+
+.award-source {
+  color: var(--global-text-color-light);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.honor-year {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 0.25rem 0.6rem;
+  background: var(--global-code-bg-color);
+  border-radius: 6px;
+}
+
+// =============================================================================
+// PUBLICATIONS PAGE STYLES
+// =============================================================================
+
+.publications {
+  h2.bibliography {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--global-text-color-light);
+    text-align: right;
+    margin: 3rem 0 1.5rem 0;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    letter-spacing: -0.02em;
+    
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  ol.bibliography {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    > li {
+      margin-bottom: 1.25rem;
+      
+      > .row {
+        display: flex;
+        gap: 1.25rem;
+        padding: 1.5rem;
+        background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
+        border-radius: 12px;
+        border: 1px solid var(--global-divider-color);
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+          border-color: var(--global-theme-color);
+        }
+      }
+    }
+  }
+
+  .col.col-sm-2.abbr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: 130px;
+    max-width: 150px;
+
+    abbr.badge {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      background: linear-gradient(135deg, var(--global-theme-color) 0%, #8b5cf6 100%);
+      color: white;
+      text-decoration: none;
+      border: none;
+      box-shadow: 0 2px 6px rgba(99, 102, 241, 0.3);
+      white-space: nowrap;
+      width: auto;
+      max-width: 100%;
+      text-align: center;
+      overflow: visible;
+    }
+  }
+
+  .preview {
+    border-radius: 8px !important;
+    border: 1px solid var(--global-divider-color) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    }
+  }
+
+  .col-sm-8 {
+    flex: 1;
+    min-width: 0;
+
+    .title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--global-text-color);
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .author {
+      font-size: 0.9rem;
+      color: var(--global-text-color-light);
+      margin-bottom: 0.4rem;
+      line-height: 1.5;
+
+      .more-authors {
+        color: var(--global-theme-color);
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-underline-offset: 2px;
+        
+        &:hover {
+          text-decoration-style: solid;
+        }
+      }
+    }
+
+    .periodical {
+      font-size: 0.85rem;
+      color: var(--global-text-color-light);
+      margin-bottom: 0.25rem;
+
+      em {
+        font-style: italic;
+        color: var(--global-text-color);
+      }
+    }
+
+    .links {
+      margin-top: 0.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+
+      a.btn {
+        font-size: 0.75rem;
+        font-weight: 500;
+        padding: 0.35rem 0.75rem;
+        border-radius: 6px;
+        background: var(--global-code-bg-color);
+        color: var(--global-text-color);
+        border: 1px solid var(--global-divider-color);
+        transition: all 0.2s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+
+        &:hover {
+          background: var(--global-theme-color);
+          color: white;
+          border-color: var(--global-theme-color);
+          transform: translateY(-1px);
+        }
+      }
+    }
+  }
+}
+
+// =============================================================================
+// DARK MODE
+// =============================================================================
+
+html[data-theme="dark"] {
+  // Shared card dark style
+  .custom-card,
+  .experience-card,
+  .honor-item,
+  .publications ol.bibliography > li > .row {
+    background: linear-gradient(135deg, #1e1e2e 0%, #252535 100%);
+    border-color: #353545;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      border-color: #454555;
+    }
+  }
+
+  .company-logo {
+    background: #2a2a3a;
+    border-color: #3a3a4a;
+  }
+
+  .tag,
+  .honor-year {
+    background: #353545;
+    color: #b0b0c0;
+  }
+
+  .publications {
+    h2.bibliography {
+      color: rgba(255, 255, 255, 0.4);
+      border-bottom-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .col.col-sm-2.abbr abbr.badge {
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .preview {
+      border-color: #3a3a4a !important;
+    }
+
+    .col-sm-8 .links a.btn {
+      background: #353545;
+      border-color: rgba(255, 255, 255, 0.15);
+      color: #b0b0c0;
+
+      &:hover {
+        background: var(--global-theme-color);
+        color: white;
+        border-color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
+// =============================================================================
+// RESPONSIVE
+// =============================================================================
+
+@media (max-width: 768px) {
+  .custom-card,
+  .experience-card {
+    flex-direction: column;
+    padding: 1.25rem;
+  }
+
+  .honor-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .honor-year {
+    align-self: flex-start;
+  }
+
+  .publications {
+    h2.bibliography {
+      font-size: 2rem;
+      text-align: left;
+    }
+
+    ol.bibliography > li > .row {
+      flex-direction: column;
+      padding: 1.25rem;
+    }
+
+    .col.col-sm-2.abbr {
+      flex-direction: row;
+      justify-content: flex-start;
+      min-width: auto;
+      max-width: none;
+      margin-bottom: 0.5rem;
+    }
+
+    .preview {
+      max-width: 150px;
+    }
+  }
+}
