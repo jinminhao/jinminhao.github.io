@@ -5,7 +5,227 @@
 //   @import "custom";
 // =============================================================================
 
+// =============================================================================
+// NAVIGATION BAR
+// =============================================================================
 
+#navbar {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--global-divider-color);
+  padding: 0.75rem 0;
+  
+  .navbar-brand {
+    font-size: 1.1rem;
+    
+    .font-weight-bold {
+      color: var(--global-text-color) !important;
+    }
+  }
+  
+  .nav-link {
+    color: var(--global-text-color-light) !important;
+    font-weight: 450;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.15rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      color: var(--global-text-color) !important;
+      background: rgba(128, 128, 128, 0.1);
+    }
+    
+    &.active {
+      color: var(--global-theme-color) !important;
+    }
+  }
+  
+  .nav-item.active .nav-link {
+    color: var(--global-theme-color) !important;
+    background: rgba(99, 102, 241, 0.1);
+  }
+  
+  // Theme toggle button
+  .toggle-container {
+    margin-left: 0.5rem;
+    
+    #light-toggle {
+      background: transparent;
+      border: none;
+      border-radius: 8px;
+      padding: 0.5rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
+      position: relative;
+      top: -2px;
+      
+      &:hover {
+        background: rgba(128, 128, 128, 0.15);
+      }
+      
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+      
+      i {
+        color: var(--global-text-color-light);
+        font-size: 1.1rem;
+        transition: color 0.2s ease;
+        line-height: 1;
+        display: block;
+      }
+      
+      &:hover i {
+        color: var(--global-text-color);
+      }
+    }
+  }
+}
+
+// =============================================================================
+// ABOUT PAGE / BIO SECTION
+// =============================================================================
+
+// Name heading
+.about h1,
+.post-content h1,
+article h1 {
+  font-size: 3.2rem !important;
+  font-weight: 300 !important;
+  color: var(--global-text-color) !important;
+  margin-bottom: 1.5rem !important;
+  letter-spacing: -0.02em !important;
+  font-family: "Roboto Slab", Georgia, serif !important;
+}
+
+// Profile section
+.about .profile,
+.profile {
+  img {
+    border-radius: 12px !important;
+    border: 2px solid var(--global-divider-color) !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
+    transition: all 0.3s ease !important;
+    
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18) !important;
+    }
+  }
+}
+
+// Bio paragraphs - target the about page content
+.about p,
+.about .clearfix p,
+.post-content > p,
+article > p {
+  font-size: 1.15rem !important;
+  line-height: 1.85 !important;
+  color: #4b5563 !important;
+  margin-bottom: 1.25rem !important;
+  font-weight: 400 !important;
+  
+  a {
+    color: var(--global-theme-color) !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    transition: all 0.2s ease !important;
+    border-bottom: 1.5px solid transparent;
+    
+    &:hover {
+      border-bottom-color: var(--global-theme-color) !important;
+    }
+  }
+}
+
+// Address block
+.about .address,
+.profile .address {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--global-code-bg-color);
+  border-radius: 8px;
+  border-left: 3px solid var(--global-theme-color);
+  
+  p {
+    font-size: 0.85rem !important;
+    color: var(--global-text-color-light) !important;
+    margin: 0.15rem 0 !important;
+    line-height: 1.5 !important;
+  }
+}
+
+// Selected Publications header on about page
+h2 {
+  &:not(.bibliography) {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--global-text-color);
+    margin: 3rem 0 1.5rem 0;
+    letter-spacing: -0.02em;
+  }
+}
+
+// Social icons
+.social {
+  margin-top: 1.5rem;
+  
+  a {
+    color: var(--global-text-color-light);
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      color: var(--global-theme-color);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// Address styling
+.address {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--global-code-bg-color);
+  border-radius: 8px;
+  border-left: 3px solid var(--global-theme-color);
+  
+  p {
+    font-size: 0.85rem !important;
+    color: var(--global-text-color-light) !important;
+    margin: 0.15rem 0 !important;
+    line-height: 1.5 !important;
+  }
+}
+
+// =============================================================================
+// FOOTER
+// =============================================================================
+
+footer {
+  border-top: 1px solid var(--global-divider-color);
+  
+  .container {
+    color: var(--global-text-color-light);
+    font-size: 0.85rem;
+    
+    a {
+      color: var(--global-theme-color);
+      
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
 
 // =============================================================================
 // SHARED CARD STYLES
@@ -385,6 +605,51 @@
 // =============================================================================
 
 html[data-theme="dark"] {
+  // Navbar dark style
+  #navbar {
+    background: rgba(28, 28, 30, 0.85) !important;
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+    
+    .nav-link:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+    
+    .toggle-container #light-toggle {
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      
+      i {
+        color: var(--global-text-color-light);
+      }
+      
+      &:hover i {
+        color: var(--global-text-color);
+      }
+    }
+  }
+
+  // About page dark style
+  .about {
+    .profile img {
+      border-color: #353545;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      
+      &:hover {
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+
+  .address {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  footer {
+    background: rgba(28, 28, 30, 0.95) !important;
+    border-top-color: rgba(255, 255, 255, 0.08);
+  }
+
   // Shared card dark style
   .custom-card,
   .experience-card,
@@ -444,6 +709,10 @@ html[data-theme="dark"] {
 // =============================================================================
 
 @media (max-width: 768px) {
+  .about h1 {
+    font-size: 2.25rem;
+  }
+
   .custom-card,
   .experience-card {
     flex-direction: column;

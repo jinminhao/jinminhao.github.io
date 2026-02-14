@@ -2,21 +2,20 @@
 layout: about
 title: About
 permalink: /
-subtitle: 
+# subtitle: PhD Candidate @ Princeton University
 profile:
   align: right
   image: personal_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   address: >
     <p>Friend Center</p>
     <p>Princeton University</p>
-    <p>Princeton, New Jersey, 08544</p>
+    <p>Princeton, NJ 08544</p>
 
-# news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 ---
 
-I am a PhD candidate at [Princeton University](https://www.princeton.edu/) advised by Prof. [Maria Apostolaki](https://netsyn.princeton.edu/people/maria-apostolaki). I'm generally interested in the intersection of Computer Networks, Machine Learning, Security and Privacy.
+I am a PhD candidate at [Princeton University](https://www.princeton.edu/) advised by Prof. [Maria Apostolaki](https://netsyn.princeton.edu/people/maria-apostolaki). My research lies at the intersection of **Computer Networks**, **Machine Learning**, **Security**, and **Privacy**.
 
-I obtained my MS degree at [Carnegie Mellon University](https://www.cmu.edu/) advised by Prof. [Vyas Sekar](https://users.ece.cmu.edu/~vsekar/) and Prof. [Giulia Fanti](https://gfanti.github.io/website/). I completed my BS degree at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/).
+Previously, I obtained my MS degree at [Carnegie Mellon University](https://www.cmu.edu/), where I was advised by Prof. [Vyas Sekar](https://users.ece.cmu.edu/~vsekar/) and Prof. [Giulia Fanti](https://gfanti.github.io/website/). I completed my BS degree at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/).
