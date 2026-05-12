@@ -63,7 +63,7 @@
       justify-content: center;
       vertical-align: middle;
       position: relative;
-      top: -2px;
+      top: 1px;
       
       &:hover {
         background: rgba(128, 128, 128, 0.15);
@@ -79,9 +79,9 @@
         font-size: 1.1rem;
         transition: color 0.2s ease;
         line-height: 1;
-        display: block;
+        padding: 0 !important;
       }
-      
+
       &:hover i {
         color: var(--global-text-color);
       }
@@ -108,6 +108,10 @@ article h1 {
 // Profile section
 .about .profile,
 .profile {
+  &.float-right {
+    margin-top: -5rem;
+  }
+
   img {
     border-radius: 12px !important;
     border: 2px solid var(--global-divider-color) !important;
@@ -128,7 +132,7 @@ article h1 {
 article > p {
   font-size: 1.15rem !important;
   line-height: 1.85 !important;
-  color: #4b5563 !important;
+  color: var(--global-text-color) !important;
   margin-bottom: 1.25rem !important;
   font-weight: 400 !important;
   

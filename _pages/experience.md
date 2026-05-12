@@ -16,7 +16,8 @@ nav_order: 5
       <h3 class="company-name">Microsoft</h3>
       <ul class="experience-details">
         <li><span class="role-title">Research Intern</span> <span class="time-period">· Summer 2026</span></li>
-        <li><span class="group-tag">Networking Research Group</span> <span class="tag">Supervisor: Kevin Hsieh</span></li>
+        <li><span class="group-tag">Networking Research Group</span></li> 
+        <li><span class="tag">Mentors: <a href="https://www.microsoft.com/en-us/research/people/kevhsieh/">Kevin Hsieh</a>, <a href="https://www.microsoft.com/en-us/research/people/samani/">Sathiya Kumaran Mani</a></span></li>
       </ul>
     </div>
   </div>
@@ -27,7 +28,8 @@ nav_order: 5
       <h3 class="company-name">Microsoft</h3>
       <ul class="experience-details">
         <li><span class="role-title">Research Intern</span> <span class="time-period">· Summer 2025</span></li>
-        <li><span class="group-tag">Networking Research Group</span> <span class="tag">Supervisor: Behnaz Arzani</span></li>
+        <li><span class="group-tag">Networking Research Group</span></li> 
+        <li><span class="tag">Mentors: <a href="https://www.microsoft.com/en-us/research/people/bearzani/">Behnaz Arzani</a>, <a href="https://www.microsoft.com/en-us/research/people/sivakakarla/news-and-awards/?facet%5Btax%5D%5Bnews-tab-types%5D%5B%5D=243972">Siva Kesava Reddy Kakarla</a>, <a href="https://www.microsoft.com/en-us/research/people/rybecket/">Ryan Beckett</a></span></li>
       </ul>
     </div>
   </div>
@@ -38,7 +40,7 @@ nav_order: 5
       <h3 class="company-name">Rockfish Data</h3>
       <ul class="experience-details">
         <li><span class="role-title">Machine Learning Engineer</span> <span class="time-period">· 2023</span></li>
-        <li><span class="tag">Supervisor: Vyas Sekar</span></li>
+        <li><span class="tag">Mentors: <a href="https://users.ece.cmu.edu/~vsekar/">Vyas Sekar</a></span></li>
       </ul>
     </div>
   </div>
@@ -49,7 +51,8 @@ nav_order: 5
       <h3 class="company-name">Baidu</h3>
       <ul class="experience-details">
         <li><span class="role-title">Software Engineer Intern</span> <span class="time-period">· Summer 2021</span></li>
-        <li><span class="group-tag">PaddlePaddle</span> <span class="tag">Supervisor: Ti Zhou</span></li>
+        <li><span class="group-tag">PaddlePaddle</span></li> 
+        <li><span class="tag">Mentors: Ti Zhou</span></li>
       </ul>
     </div>
   </div>

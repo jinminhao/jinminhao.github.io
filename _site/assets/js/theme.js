@@ -204,15 +204,10 @@ let transTheme = () => {
 
 let initTheme = (storedTheme) => {
   let theme = storedTheme;
-  
-  // If no stored theme or invalid, check system preference
+
+  // Default to dark if no stored preference
   if (!theme || theme === "null" || (theme !== "dark" && theme !== "light")) {
-    const userPref = window.matchMedia;
-    if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
-      theme = "dark";
-    } else {
-      theme = "light";
-    }
+    theme = "dark";
   }
 
   setTheme(theme);

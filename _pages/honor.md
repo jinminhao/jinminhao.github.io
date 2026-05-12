@@ -14,6 +14,14 @@ nav_order: 5
     <div class="honor-item">
       <div class="honor-content">
         <span class="honor-icon service"></span>
+        <span class="honor-text">Shadow PC, <span class="honor-venue">IMC</span></span>
+      </div>
+      <span class="honor-year">2026</span>
+    </div>
+
+    <div class="honor-item">
+      <div class="honor-content">
+        <span class="honor-icon service"></span>
         <span class="honor-text">Shadow PC, <span class="honor-venue">EuroSys</span></span>
       </div>
       <span class="honor-year">2026</span>
