@@ -17,7 +17,7 @@ nav_order: 5
       <ul class="experience-details">
         <li><span class="role-title">Research Intern</span> <span class="time-period">· Summer 2026</span></li>
         <li><span class="group-tag">Networking Research Group</span></li> 
-        <li><span class="tag">Mentors: <a href="https://www.microsoft.com/en-us/research/people/kevhsieh/">Kevin Hsieh</a>, <a href="https://www.microsoft.com/en-us/research/people/samani/">Sathiya Kumaran Mani</a></span></li>
+        <li><span class="tag">Mentors: <a href="https://www.microsoft.com/en-us/research/people/kevhsieh/">Kevin Hsieh</a>, <a href="https://www.microsoft.com/en-us/research/people/sujbanerjee/">Sujata Banerjee</a>, <a href="https://www.microsoft.com/en-us/research/people/samani/">Sathiya Kumaran Mani</a></span></li>
       </ul>
     </div>
   </div>
