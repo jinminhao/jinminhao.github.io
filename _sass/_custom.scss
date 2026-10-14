@@ -367,13 +367,20 @@ footer {
 // =============================================================================
 
 .honor-section {
-  @extend .custom-section;
+  margin-bottom: 2rem;
+
+  .custom-section-title {
+    font-size: 1.4rem;
+    margin: 0 0 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom-width: 1px;
+  }
 }
 
 .honor-list {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0;
 }
 
 .honor-item {
@@ -381,17 +388,10 @@ footer {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 1rem 1.25rem;
-  background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
-  border-radius: 10px;
-  border: 1px solid var(--global-divider-color);
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  padding: 0.5rem 0;
 
-  &:hover {
-    transform: translateX(4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-    border-color: var(--global-theme-color);
+  & + .honor-item {
+    border-top: 1px solid var(--global-divider-color);
   }
 }
 
@@ -441,9 +441,7 @@ footer {
   color: var(--global-text-color-light);
   font-weight: 500;
   white-space: nowrap;
-  padding: 0.25rem 0.6rem;
-  background: var(--global-code-bg-color);
-  border-radius: 6px;
+  font-variant-numeric: tabular-nums;
 }
 
 // =============================================================================
@@ -657,7 +655,6 @@ html[data-theme="dark"] {
   // Shared card dark style
   .custom-card,
   .experience-card,
-  .honor-item,
   .publications ol.bibliography > li > .row {
     background: linear-gradient(135deg, #1e1e2e 0%, #252535 100%);
     border-color: #353545;
@@ -674,8 +671,7 @@ html[data-theme="dark"] {
     border-color: #3a3a4a;
   }
 
-  .tag,
-  .honor-year {
+  .tag {
     background: #353545;
     color: #b0b0c0;
   }
@@ -724,13 +720,8 @@ html[data-theme="dark"] {
   }
 
   .honor-item {
-    flex-direction: column;
     align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  .honor-year {
-    align-self: flex-start;
+    gap: 0.75rem;
   }
 
   .publications {
