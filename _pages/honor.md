@@ -14,6 +14,14 @@ nav_order: 5
     <div class="honor-item">
       <div class="honor-content">
         <span class="honor-icon service"></span>
+        <span class="honor-text">Reviewer, <span class="honor-venue">IEEE Transactions on Information Forensics &amp; Security</span></span>
+      </div>
+      <span class="honor-year">2026</span>
+    </div>
+
+    <div class="honor-item">
+      <div class="honor-content">
+        <span class="honor-icon service"></span>
         <span class="honor-text">Reviewer, <span class="honor-venue">IEEE Transactions on Mobile Computing</span></span>
       </div>
       <span class="honor-year">2026</span>
@@ -23,14 +31,6 @@ nav_order: 5
       <div class="honor-content">
         <span class="honor-icon service"></span>
         <span class="honor-text">Reviewer, <span class="honor-venue">ICT Express</span></span>
-      </div>
-      <span class="honor-year">2026</span>
-    </div>
-
-    <div class="honor-item">
-      <div class="honor-content">
-        <span class="honor-icon service"></span>
-        <span class="honor-text">Reviewer, <span class="honor-venue">IEEE Transactions on Information Forensics &amp; Security</span></span>
       </div>
       <span class="honor-year">2026</span>
     </div>
